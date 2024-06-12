@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>Registro de usuário</title>
+	</head>
+	<body>
+		<header>
+			<h1>Realize sua reserva</h1>
+			<h3>*preencha todos os campos para a reserva ser concluida</h3>
+			<p style="color: #FFFFFF"> 
+		</header>
+		<form action="#" method="POST">
+			<!--Campo de nome-->
+			<label>Nome:</label><br/>
+			<input type="text" id="nome" name="Nome" required placeholder="Nome...">
+			
+			<br/><br/>
+			
+			<!--Campo de sobrenome-->
+			<label>Sobrenome:</label><br/>
+			<input type="text" id="sobrenome" name="sobrenome" required placeholder="Sobrenome...">
+			
+			<br/><br/>
+			
+			<!--Email-->
+			<label>E-mail:</label><br/>
+			<input type="email" id="email" name="email" required placeholder="email@email.com">
+			
+			<br/><br/>
+			
+			<!--Botão "telefone"-->
+			<label>Telefone:</label><br/>
+			<input type="tel" id="telefone" name="telefone:" required placeholder="(xx) xxxxx-xxxx" pattern="\([0-9]{2}\)[0-9]{5}-[0-9]{4}">
+			
+			<br/><br/>
+			
+			<!--Quantidade de pessoas-->
+			<label>Quantidade de pessoas:</label><br/>
+			<input type="number" id="quantidade de pessoas" name="quantidade de pessoas" min="2" max="30"  required>
+			
+			<br/><br/>
+			
+			<!--Data da reserva-->
+			<label>Data da reserva:</label><br/>
+			<input type="date" id="Data da reserva" name="Data da reserva" min="2024-06-12" max="2024-12-31" required>
+			
+			<br/><br/>
+			
+			<!--Horário da reserva-->
+			<label>Horário da reserva</label><br/>
+			<input type="time" id="Horário da reserva" name="Horário da reserva" required>
+			
+			<br/><br/>
+			
+			<!--Preferências alimentares-->
+			<label>Preferências alimentares:</label><br/>
+			<input type="checkbox" id="Preferências alimentares" name="Preferências alimentares">
+			<label>Padrão</label><br/>
+			<input type="checkbox" id="Preferências alimentares" name="Preferências alimentares">
+			<label>Pescatariana</label><br/>
+			<input type="checkbox" id="Preferências alimentares" name="Preferências alimentares">
+			<label>Vegetariana</label><br/>
+			<input type="checkbox" id="Preferências alimentares" name="Preferências alimentares">
+			<label>Lacto-vegetariana</label><br/>
+			<input type="checkbox" id="Preferências alimentares" name="Preferências alimentares">
+			<label>Ovo-vegetariana</label><br/>
+			<input type="checkbox" id="Preferências alimentares" name="Preferências alimentares">
+			<label>Vegana</label><br/>
+			
+			<br/><br/>
+			
+			<!--Restrições alimentares-->
+			<label>Restrições alimentares:</label><br/>
+			<input type="checkbox" id="Restrições alimentares" name="Restrições alimentares">
+			<label>Intolerância à lactose</label><br/>
+			<input type="checkbox" id="Restrições alimentares" name="Restrições alimentares">
+			<label>Intolerância ao glúten</label><br/>
+			<input type="checkbox" id="Restrições alimentares" name="Restrições alimentares">
+			<label>Alergia a amendoim</label><br/>
+			<input type="checkbox" id="Restrições alimentares" name="Restrições alimentares">
+			<label>alergia a frutos do mar </label><br/>
+			<input type="checkbox" id="Restrições alimentares" name="Restrições alimentares">
+			<label>diabetes</label><br/>
+			<input type="checkbox" id="Restrições alimentares" name="Restrições alimentares">
+			<label>não possui</label><br/>
+			
+			<br/><br/>
+			
+			<!--Tipo de evento-->
+			<label>Tipo de evento:</label><br/>
+			<select name="tipo de evento" id="tipo de evento" required>
+				<option value="selecione">Tipo de evento</option>
+				<option value="ev_1">Evento social</option>
+				<option value="ev_2">Evento acadêmico</option>
+				<option value="ev_3">Evento corporativo</option>
+			</select>
+			
+			<br/><br/>
+			
+			<!--necessidades especiais-->
+			<label>Necessidades especiais:</label><br/>
+			<input type="checkbox" id="Necessidades especiais" name="Necessidades especiais" required>
+			<label>Deficiência física</label><br/>
+			<input type="checkbox" id="Necessidades especiais" name="Necessidades especiais">
+			<label>Deficiência visual</label><br/>
+			<input type="checkbox" id="Necessidades especiais" name="Necessidades especiais">
+			<label>Deficiência auditiva</label><br/>
+			<input type="checkbox" id="Necessidades especiais" name="Necessidades especiais">
+			<label>Deficiência intelectual</label><br/>
+			<input type="checkbox" id="Necessidades especiais" name="Necessidades especiais">
+			<label>Deficiência psicossocial</label><br/>
+			<input type="checkbox" id="Necessidades especiais" name="Necessidades especiais">
+			<label>Deficiência múltipla</label><br/>
+			<input type="checkbox" id="Necessidades especiais" name="Necessidades especiais">
+			<label>Nenhuma</label><br/>
+			
+			<br/><br/>
+			
+			<!--Preferência de assento-->
+			<label>Preferência de assento:</label><br/>
+			<select name="Preferência de assento" id="Preferência de assento" required>
+				<option value="selecione">Área livre</option>
+				<option value="ev_1">Mesas e Cadeiras Tradicionais</option>
+				<option value="ev_2">Bancadas e Banquetas</option>
+			</select>
+			
+			<br/><br/>
+			
+			<!--Código promocional-->
+			<label>Código promocional:</label><br/>
+			<input type="text" id="Código promocional" name="Código promocional" required placeholder="Sobrenome...">
+			
+			<br/><br/>
+			
+			<!--Campo de cidade-->
+			<label>Cidade:</label><br/>
+			<input type="text" id="Cidade" name="Cidade" required placeholder="Cidade">
+			
+			<br/><br/>
+			
+			<!--Botão "CEP"-->
+			<label>CEP:</label><br/>
+			<input type="text" id="cep" name="CEP:" required placeholder="XXXXX-XXX" pattern="[0-9]{5}-[0-9]{3}">
+			
+			<br/><br/>
+			
+			<!--País-->
+			<label>País:</label><br/>
+			<select name="País" id="País" required>
+				<option value="selecione">País</option>
+				<option value="pa_1">Brasil</option>
+				<option value="pa_2">França</option>
+				<option value="pa_3">EUA</option>
+				<option value="pa_4">Portugal</option>
+				<option value="pa_5">Rússia</option>
+				<option value="pa_6">Autrália</option>
+				<option value="pa_6">Outro</option>
+			</select>
+			
+			<br/><br/>
+			
+			<!--Referência-->
+			<label>Referência:</label><br/>
+			<input type="text" id="Referência" name="Referência" required placeholder="Referência...">
+			
+			<br/><br/>
+			
+			<!--Comentários---->
+			<label>Comentários adicionais:</label><br/>
+			<textarea id="biografia" name="biografia">Deixe seu comentário...</textarea>
+			
+			<br/><br/>
+			
+			<!--Campos de marcar-->
+			<input type="checkbox" id="termos" name="termos" required>
+			<label>Li e aceito os termos e condições</label><br/>
+			<input type="checkbox" id="notificacoes" name="notificacoes">
+			<label>Aceito receber notificações por e-mail e whatsapp</label><br/>
+			
+			<br/><br/>
+			<!--Botão "Cadastro"-->
+			<input type="submit" value="Enviar">
+		</form>	
+	</body>
+</html>
